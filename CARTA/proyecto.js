@@ -18,16 +18,16 @@ function Jugador(apodo, vidas, valorCarta) {
     };
   
     this.mostrarEstado = function() {
-      console.log(`Apodo: ${this.apodo}, Vidas restantes: ${this.vidas}`);
+      alert(`Apodo: ${this.apodo}, Vidas restantes: ${this.vidas}`);
     };
 
   }
   
   const nuevoJugador = new Jugador('Jugador1', 5, 4);
-  console.log("Estado inicial del jugador:");
+  alert("Estado inicial del jugador:");
   nuevoJugador.mostrarEstado(); // Muestra "Apodo: Jugador1, Vidas restantes: 5"
   
   // Reducir las vidas del jugador en 2
   nuevoJugador.reducirVidas(2);
-  console.log("Estado después de reducir vidas:");
+  alert("Estado después de reducir vidas:");
   nuevoJugador.mostrarEstado();
